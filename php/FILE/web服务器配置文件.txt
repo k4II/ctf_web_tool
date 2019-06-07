@@ -1,0 +1,9 @@
+/etc/apache2
+
+
+/etc/php/5.5/apache2/php.ini
+
+/var/lib/php/sess_PHPSESSID
+/var/lib/php/sess_PHPSESSID
+/tmp/sess_PHPSESSID
+/tmp/sessions/sess_PHPSESSID

